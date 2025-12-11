@@ -2,11 +2,151 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>テスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粋なサウナ案内 | Aoi Sauna Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>見出しのサンプル</h1>
-  <p>ここに本文を入力してください。</p>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="eyebrow">粋にととのう、青のサウナ体験</p>
+      <h1>蒸気と静寂が交わる場所へ</h1>
+      <p class="lead">
+        職人が選び抜いた銘木の香り、穏やかな照明、柔らかなロウリュの音。
+        心をほどくサウナをセレクトしてご紹介します。
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#spots">おすすめサウナを見る</a>
+        <a class="btn ghost" href="#ritual">ととのい方を知る</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="container grid two">
+        <div>
+          <h2>火と水の間にある、粋な時間</h2>
+          <p>
+            都会の喧騒から離れ、温度と湿度の揺らぎに身を委ねる。<br>
+            本サイトでは、空間美・設備・水質にこだわるサウナを厳選し、
+            ゆっくり味わいたいポイントをまとめました。
+          </p>
+          <ul class="tags">
+            <li>静かなロウリュ</li>
+            <li>深く冷たい水風呂</li>
+            <li>ととのい椅子</li>
+            <li>セルフアウフグース</li>
+          </ul>
+        </div>
+        <div class="stat-card">
+          <p class="label">今日のコンディション</p>
+          <div class="stats">
+            <div>
+              <span class="stat__number">92</span>
+              <span class="stat__label">室温 ℃</span>
+            </div>
+            <div>
+              <span class="stat__number">15</span>
+              <span class="stat__label">水風呂 ℃</span>
+            </div>
+            <div>
+              <span class="stat__number">20</span>
+              <span class="stat__label">外気浴 ℃</span>
+            </div>
+          </div>
+          <p class="note">※ 数値はモデル例です。施設により変動します。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="spots" class="section spots">
+      <div class="container">
+        <div class="section__header">
+          <h2>おすすめサウナ三選</h2>
+          <p>空間・ロウリュ・水質で選んだ珠玉のスポット。</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <p class="badge">都会の隠れ家</p>
+            <h3>青陰サウナ</h3>
+            <p class="sub">杉とヒバの香りが広がる静謐空間</p>
+            <ul>
+              <li>ロウリュ：毎時 0分 / 30分の2回</li>
+              <li>水風呂：地下水かけ流し 14℃</li>
+              <li>休憩：半屋外のデッキチェアで外気浴</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="badge">古民家再生</p>
+            <h3>灯 -Akari-</h3>
+            <p class="sub">土壁と間接照明で呼吸が深まる</p>
+            <ul>
+              <li>セルフロウリュ：アロマ水を選択可</li>
+              <li>水風呂：檜樽 16℃、深さゆとり</li>
+              <li>休憩：囲炉裏スペースで静かに湯冷まし</li>
+            </ul>
+          </article>
+          <article class="card">
+            <p class="badge">海辺の静寂</p>
+            <h3>潮音サウナ</h3>
+            <p class="sub">波音がBGM、ミストとドライを選択</p>
+            <ul>
+              <li>アウフグース：夕方限定の風アート</li>
+              <li>水風呂：海水ブレンドで肌が柔らか</li>
+              <li>休憩：海を望むリクライニングベンチ</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ritual" class="section ritual">
+      <div class="container grid three">
+        <div class="step">
+          <p class="step__number">01</p>
+          <h4>身体を温める</h4>
+          <p>ゆっくり10分、鼻呼吸で。熱を芯まで届ける感覚に集中。</p>
+        </div>
+        <div class="step">
+          <p class="step__number">02</p>
+          <h4>冷たさを受け入れる</h4>
+          <p>水風呂は15〜60秒。肩まで浸かり、呼吸を止めない。</p>
+        </div>
+        <div class="step">
+          <p class="step__number">03</p>
+          <h4>静かにととのう</h4>
+          <p>外気浴で3〜5分。心拍が落ち着くまで目を閉じて余韻を楽しむ。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <div class="container">
+        <blockquote>
+          「余白のある熱、音のない水。そこで心はほどけ、また結ばれる。」
+          <cite>- Sauna Curator Aoi</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div>
+        <p class="eyebrow">Aoi Sauna Guide</p>
+        <p class="muted">粋なサウナ選びと、ととのい方のヒントをお届けします。</p>
+      </div>
+      <div class="footer__links">
+        <a href="#spots">スポット</a>
+        <a href="#ritual">ととのい方</a>
+        <a href="https://sauna.or.jp/" target="_blank" rel="noreferrer">日本サウナ・スパ協会</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
